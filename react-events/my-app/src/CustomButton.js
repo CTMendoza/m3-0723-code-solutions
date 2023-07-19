@@ -1,11 +1,7 @@
-export default function CustomButton({ text, color }) {
-  function handleClick() {
-    alert(`Clicked on ${text} button!`);
-  }
-
+export default function CustomButton({ onCustomClick, text, color }) {
   return (
     <button
-      onClick={handleClick}
+      onClick={onCustomClick}
       style={{ backgroundColor: color, width: 100, height: 50 }}>
       {text}
     </button>
