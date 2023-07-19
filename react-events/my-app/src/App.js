@@ -3,14 +3,23 @@ import './App.css';
 import CustomButton from './CustomButton';
 
 function App() {
-  function handleOnClick(text) {
+  function handleCustomClick(text) {
+    console.log(text);
     alert(`Clicked on ${text} button!`);
   }
   return (
     <div className="App">
-      <CustomButton onClick={handleOnClick} text="Cold" color="blue" />
-      <CustomButton onClick={handleOnClick} text="Warm" color="orange" />
-      <CustomButton onClick={handleOnClick} text="Hot" color="red" />
+      <CustomButton
+        onCustomClick={handleCustomClick}
+        text="Cold"
+        color="blue"
+      />
+      <CustomButton
+        onCustomClick={handleCustomClick}
+        text="Warm"
+        color="orange"
+      />
+      <CustomButton onCustomClick={handleCustomClick} text="Hot" color="red" />
     </div>
   );
 }
