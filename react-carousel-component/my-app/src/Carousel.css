@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.arrow-left {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.arrow-right {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.img-container {
+  flex-basis: calc(100% / 3);
+  height: 25em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fa-circle {
+  border: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 10px;
+  margin: 2px;
+}
